@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## R programming assignment 2 (week 3)
+## two functions: the first to create a special matrix object, and the second to get the inverse (trying cache first)
 
-## Write a short comment describing this function
+## Create a special matrix object with internal functions to get/set the matrix values and get/set the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -18,8 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## Return the inverse of x, either from cache (if available) or by calculation with solve()
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inv <- x$getinv()
